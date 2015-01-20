@@ -1,0 +1,21 @@
+<resources>
+    <color name="gray">#eaeaea</color>
+    <color name="titlebackgroundcolor">#00abd7</color>
+    <color name="titlecolor">#666666</color>
+<string name="country_prompt">Choisir mode de paiement</string>
+ 
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+    <dimen name="jphauteur" >40dp</dimen>
+    <dimen name="jphauteurText" >30dp</dimen>
+    <dimen name="jp2hauteurText" >50dp</dimen>
+    <dimen name="jpPadText" >5dp</dimen>
+</resources>

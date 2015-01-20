@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/montantText"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteurText"
+                android:layout_weight="1"
+                android:ems="10"
+                android:paddingTop="@dimen/jpPadText"
+                android:text="Montant" />
+             <EditText
+                android:id="@+id/montant"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteur"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="5dip" />
+        </TableRow>
+
+        
+
+       
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteurText"
+                android:layout_weight="1"
+                android:gravity="bottom"
+               
+                android:paddingTop="@dimen/jpPadText"
+                android:text="Date" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteur"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/moyenPaiement"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jp2hauteurText"
+                android:layout_weight="1"
+                android:gravity="bottom|left"
+               
+                android:singleLine="false"
+                android:paddingTop="@dimen/jpPadText"
+                android:text="Moyen de paiement" />
+
+            <Spinner
+                 android:ems="7"
+                android:id="@+id/spinner1"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jp2hauteurText"
+                android:layout_weight="2"
+                android:entries="@array/country_arrays"
+                android:prompt="@string/country_prompt" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_marginTop="10dp">
+
+            <TextView
+                android:textColor="@color/titlecolor"
+                android:id="@+id/chequeText"
+                 android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteurText"
+                android:layout_weight="1"
+android:ems="10"
+                android:paddingTop="@dimen/jpPadText"
+                android:text="Numéro Cheque" 
+                />
+            <EditText
+                android:id="@+id/cheque"
+                  android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteur"
+                android:layout_weight="1"
+                android:ems="5"
+                android:inputType="text"
+                android:padding="5dip"
+                android:text="0" />
+        </TableRow>
+
+        
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/lieuText"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteurText"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/jpPadText"
+                android:text="Lieu" />
+            
+            <AutoCompleteTextView
+                android:layout_width="0dip"
+                android:id="@+id/lieu"
+                android:layout_weight="2"
+                android:gravity="bottom"
+                android:textColor="#000000" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/beneText"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="@dimen/jphauteurText"
+               
+                android:ems="10"
+                android:gravity="bottom"
+               
+                android:paddingTop="@dimen/jpPadText"
+                android:text="Bénéficiaire"
+                android:width="@dimen/jpPadText" />
+            <AutoCompleteTextView
+                android:id="@+id/bene"
+                android:layout_weight="2"
+                android:layout_width="0dip"
+                android:ems="10"
+                android:textColor="#000000" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonStart"
+                
+                android:layout_height="@dimen/jphauteur"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="20dp"
+                android:text="Envoyer" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="@dimen/jphauteur"
+                android:layout_height="@dimen/jphauteur"
+                
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/exitbutton" />
+        </TableRow>
+
+        <TableRow>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
